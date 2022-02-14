@@ -71,6 +71,9 @@
   &:hover {
     background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
   }
+  &:active {
+    color: $primary;
+  }
   &.tag-combo-container__item--selected {
     color: $primary;
     font-weight: 500;
