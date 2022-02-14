@@ -23,32 +23,36 @@
 }
 
 .combo-container {
-  background-color: $backgraound-white;
-  position: absolute;
-  top: calc(100% + 2px);
-  left: 0;
-  border: 1px solid $border-surport;
-  min-width: 100%;
   display: none;
+  overflow-y: auto;
+  z-index: 1000;
+  position: absolute;
+  height: 200px;
+  background-color: $backgraound-white;
+  border: 1px solid $border-surport;
   box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.1);
-  z-index: 1;
   &.combo-container--active {
     display: block;
   }
 }
 
-.combo-container__list {
-  min-width: 100%;
-  width: max-content;
-}
-
 .combo-container__item {
-  cursor: pointer;
-  width: 100%;
   @include padding--xs;
   @include font--sm;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
   &:hover {
     background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
+  }
+  &:active {
+    color: $primary;
+  }
+  &.combo-container__item--selected {
+    color: $primary;
+    font-weight: 500;
   }
 }
 
