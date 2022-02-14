@@ -1,0 +1,24 @@
+@import '_style.scss';
+
+.pagenation{
+    width: 100%;
+    @include padding--xs;
+    button{
+        width: 32px;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: rgba($color : $primary, $alpha : 0.1);
+            img{
+                opacity: 1;
+            }
+        }
+        &:active{
+            background-color: $backgraound-white;
+        }
+        &.button--selected{
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}

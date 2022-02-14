@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal-mail-new</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/checkbox.css">
+    <link rel="stylesheet" href="../css/commbobox.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/date-picker.css">
+    <link rel="stylesheet" href="../css/editor.css">
+    <link rel="stylesheet" href="../css/floating.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/inform.css">
+    <link rel="stylesheet" href="../css/information.css">
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="../css/loader-spinner.css">
+    <link rel="stylesheet" href="../css/mail.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/pagenation.css">
+    <link rel="stylesheet" href="../css/select.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/tag.css">
+    <link rel="stylesheet" href="../css/title.css"> 
+    <link rel="stylesheet" href="../css/toogle.css">   -->
+</head>
+<body>
+    <!-- modal-container에  modal-container--active 클래스 추가 될 경우 모달 활성화 -->
+    <div class="modal-container modal-container--active">
+        <div class="modal modal--lg vertical">
+            <div class="modal-head horizontal--between">
+                <span class="modal-head__title">
+                    메일 보내기
+                </span>
+                <button class="button button--icon button--link">
+                    <img src="../img/close-medium.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body vertical">
+                <div class="modal-body-contents">   
+                    <div class="horizontal--start">
+                        <span for="" class="text-input__title w-100px">발신자</span>
+                        <input type="email" class="input" id="">
+                    </div>      
+                </div>
+                <div class="modal-body-contents">
+                    <div class="horizontal--start">
+                        <span for="" class="text-input__title w-100px">수신자</span>
+                        <input type="email" class="input" id="">
+                        <button class="button button--normal">주소록</button>
+                    </div>
+                </div>
+                <div class="modal-body-contents">
+                    <div class="horizontal--start">
+                        <span for="" class="text-input__title w-100px">제목</span>
+                        <input type="text" class="input" id="">
+                    </div>
+                </div>
+                <div class="modal-body-contents h-100">
+                    <div class="horizontal--start h-100">
+                        <span class="text-input__title w-100px">내용</span>
+                        <div class="editor"></div>
+                    </div>  
+                </div>
+            </div>
+            <div class="modal-foot">
+                <div class="horizontal--center">
+                    <button class="button button--normal button--primary">발송</button>
+                    <button class="button button--normal">발송 테스트</button>
+                    <button class="button button--normal">미리보기</button>
+                </div>                    
+            </div>
+        </div>        
+    </div>    
+</body>

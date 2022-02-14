@@ -1,0 +1,102 @@
+@import '_style.scss';
+
+.modal-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $backgraound-black, $alpha: 0.5);       
+    top: 0;
+    left: 0; 
+    z-index: 999;
+    display: none;
+    position: fixed;
+    &.modal-container--active{
+        display: block;
+    }
+}
+
+.modal{
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    // overflow-y: auto;
+}
+
+.modal--sm{
+    width: 540px;  
+    .modal-body{
+        @include padding--lg;
+        height: auto;
+        & > *{
+            @include margin-bottom--lg;
+        }
+    }      
+}
+
+.modal--lg{
+    width: 1080px;
+    .modal-body{
+        @include padding--md;
+        & > *{
+            @include margin-bottom--lg;
+        }
+    }
+}
+
+.modal--xl{
+    width: 1200px;
+    .modal-body{
+        @include padding--md;
+        & > *{
+            @include margin-bottom--lg;
+        }
+    }
+}
+     
+.modal-head{
+    width: 100%;
+    border-bottom: 1px solid $border-surport ;
+    align-items: center;
+    @include padding--xs;
+} 
+
+.modal-head__title{
+    @include font--basic;
+}
+
+.modal-body{   
+    height: 660px;
+    overflow-y: auto;    
+    & > *:nth-last-child(1){
+        margin-bottom: 0;
+    }
+}
+
+.modal-body__title{
+    @include font--lg;
+    font-weight: 500;
+}
+
+.modal-body__subtext{
+    @include font--basic ;   
+}
+
+.modal-foot{
+    background-color: $secondary ;
+    @include padding--xs;     
+}
+
+
+// window IE에서 overflow-y auto 일때 padding-bottom 추가
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .modal-body::after{
+        content: '';
+        display: block;
+        @include padding-bottom--md;
+    }
+    
+  
+}

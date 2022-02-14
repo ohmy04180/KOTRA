@@ -1,0 +1,19 @@
+@import '_style.scss';
+
+
+form {
+    .form__item{
+        @include margin-bottom--lg;
+        position: relative;
+    }
+    &:nth-last-child(1){
+        margin-bottom: 0;
+    }    
+} 
+
+form.vertical > *{
+    @include margin-bottom--lg;
+    &:nth-last-child(1){
+        margin-bottom: 0;
+    } 
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal-lg</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/checkbox.css">
+    <link rel="stylesheet" href="../css/commbobox.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/date-picker.css">
+    <link rel="stylesheet" href="../css/editor.css">
+    <link rel="stylesheet" href="../css/floating.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/inform.css">
+    <link rel="stylesheet" href="../css/information.css">
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="../css/loader-spinner.css">
+    <link rel="stylesheet" href="../css/mail.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/pagenation.css">
+    <link rel="stylesheet" href="../css/select.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/tag.css">
+    <link rel="stylesheet" href="../css/title.css"> 
+    <link rel="stylesheet" href="../css/toogle.css">   -->
+</head>
+<body>
+    <!-- modal-container에  modal-container--active 클래스 추가 될 경우 모달 활성화 -->
+    <div class="floating-wrap vertical">
+        <div class="floating-group">
+            <div class="floating">
+                <button class="button button--primary button--icon button--icon-only">
+                    <img src="../img/chevron-up.svg" alt="">
+                </button>
+            </div>
+            <div class="floating">
+                <button class="button button--normal button--icon button--icon-only">
+                    <img src="../img/chevron-down.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="floating-group">
+            <div class="floating">
+                <button class="button button--normal">
+                    <span class="button__text">Eng</span>
+                </button>
+            </div>            
+        </div>                
+    </div>
+    <div class="modal-container modal-container--active">
+        <div class="modal modal--lg vertical">
+            <div class="modal-head horizontal--between">
+                <span class="modal-head__title">
+                    기업 인력 매칭
+                </span>
+                <button class="button button--icon button--link">
+                    <img src="../img/close-medium.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-contents">
+                    <div class="tag">                        
+                        <div class="tag-wrap horizontal--start">
+                            <button class="tag__button button">
+                                <span class="tag__text">한경사</span>
+                                <img src="../img/close-medium.svg" alt="">
+                            </button>
+                            <button class="tag__button button">
+                                <span class="tag__text">가나다라마바사 아자차카타파하</span>
+                                <img src="../img/close-medium.svg" alt="">
+                            </button>
+                            <button class="tag__button button">
+                                <span class="tag__text">(주)가빈</span>
+                                <img src="../img/close-medium.svg" alt="">
+                            </button>
+                            <button class="tag__button button">
+                                <span class="tag__text">르노삼성자동차주식회사르노삼성자동차주식회사</span>
+                                <img src="../img/close-medium.svg" alt="">
+                            </button>
+                            <button class="tag__button button">
+                                <span class="tag__text">르노삼성자동차주식회사</span>
+                                <img src="../img/close-medium.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="tag-commbo-wrap vertical overflow-y">
+                            <button class="tag-commbo__button button button--link button--icon button--icon-only">
+                                <img src="../img/chevron-down-medium.svg" alt="">
+                            </button>
+                            <!--  tag-commbo-container에  tag-commbo-container--active 추가시 콤보박스 활성화 -->
+                            <div class="tag-commbo-container vertical">
+                                <ul class="tag-commbo-container__list">
+                                    <!-- 이미 태그로 추가되어 있는 item에 tag-commbo-container__item--selected 추가시 스타일변경 -->
+                                    <li class="tag-commbo-container__item tag-commbo-container__item--selected">한경사</li>
+                                    <li class="tag-commbo-container__item">2</li>
+                                    <li class="tag-commbo-container__item">1234567891011121314</li>
+                                    <li class="tag-commbo-container__item">2</li>
+                                    <li class="tag-commbo-container__item">1234567891011121314</li>
+                                    <li class="tag-commbo-container__item">2</li>
+                                    <li class="tag-commbo-container__item">1234567891011121314</li>
+                                    <li class="tag-commbo-container__item">2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                </div> 
+                <div class="modal-body-contents">
+                    <form action="" class="vertical">
+                        <div class="horizontal--start">
+                            <div class="input-wrap">
+                                <div class="horizontal--start">
+                                    <label for="" class="text-input__title">기업당 매칭기업수</label>
+                                    <input type="number" placeholder="00" class="input">
+                                </div> 
+                            </div>
+                            <div class="input-wrap">
+                                <div class="horizontal--start search-container">
+                                    <label for="" class="text-input__title">HS CODE</label>
+                                    <input type="text" placeholder="Search" class="input text-input_search">                                    
+                                    <button class="button button--link button--icon text-input__search-button button--icon-only">
+                                        <img src="../img/search.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="horizontal--start">
+                                    <label for="" class="text-input__title">HS CODE 결과내 검색</label>
+                                    <input type="text" placeholder="Search" class="input text-input_search" disabled>                                    
+                                </div>                           
+                            </div>                    
+                        </div>
+                        <div class="horizontal--start">
+                            <div class="select-wrap horizontal--start w-100">
+                                <span class="select__title">지역본부</span>
+                                <select name="미선택" id="미선택" class="w-100" >
+                                    <option value="미선택" selected>전체</option>
+                                    <option value="가나다" >CIS지역본부</option>
+                                    <option value="가나다라마바사" >동남아대양주지역본부</option>
+                                </select>
+                            </div>
+                            <div class="select-wrap horizontal--start  w-100">
+                                <span class="select__title">무역관</span>
+                                <select name="미선택" id="미선택" class="w-100" >
+                                    <option value="미선택" selected>전체</option>
+                                    <option value="가나다" >광저우무역관</option>
+                                    <option value="가나다라마바사" >나고야무역관</option>
+                                </select>
+                            </div>
+                            <div class="select-wrap horizontal--start  w-100">
+                                <span class="select__title">해외기업국가</span>
+                                <select name="미선택" id="미선택" class="w-100" disabled>
+                                    <option value="미선택" selected>독일</option>
+                                    <option value="가나다" >미국</option>
+                                    <option value="가나다라마바사" >중국</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="horizontal--start">
+                            <span class="text-input__title">매칭 기준 기업</span>
+                            <div class="horizontal--start">                        
+                                <input type="radio" name="radio-1" id="radio-1-1">
+                                <label for="radio-1-1" class="text-input__label">각각 다른기업 매칭하기</label>
+                                <input type="radio" name="radio-1" id="radio-1-2">
+                                <label for="radio-1-2" class="text-input__label">동일한 기업 매칭하기</label>
+                            </div>
+                        </div>  
+                        <div class="horizontal--center">
+                            <button class="button button--normal">매칭조건 추가 하기</button>
+                            <button class="button button--normal button--icon button--icon-only">
+                                <img src="../img/reset.svg" alt="">
+                            </button>  
+                        </div>  
+                    </form>                      
+                </div>  
+                <div class="modal-body-contents">
+                    <div class="modal-table">
+                        <div class="table-top horizontal--between">
+                            <span class="table-top__text">매칭 조건 목록</span>
+                            <div class="horizontal--start w-25">
+                                <input type="text" placeholder="Search" class="input text-input__search">                                   
+                                <button class="button button--normal">선택삭제</button>
+                            </div>                        
+                        </div> 
+                        <div class="table-top horizontal--between">
+                            <div class="input-wrap">
+                                <div class="horizontal--start search-container">
+                                    <input type="text" placeholder="Search" class="input text-input_search">                                    
+                                    <button class="button button--link button--icon text-input__search-button button--icon-only">
+                                        <img src="../img/search.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="horizontal--start search-container">
+                                    <input type="text" placeholder="Search" class="input text-input_search" disabled>                                    
+                                    <button class="button button--link button--icon text-input__search-button button--icon-only">
+                                        <img src="../img/search.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="table-wrap" style="height: 200px;">
+                            <!-- table영역에 스크롤 생성이 필요할 경우 상위 tag에 height 삽입 필수 -->
+                            <div class="table-container">TABLE</div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="modal-body-contents">                    
+                    <span class="modal-body__title">
+                        CRM에 저장된 국내기업과 해외바이어를 Long List에 직접 추가할 수 있습니다.
+                    </span>                    
+                </div>
+                <div class="modal-body-contents">
+                    <div class="modal-table">
+                        <div class="table-wrap">                                                 
+                            <div class="table-container">
+                                <div class="table-head">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="table-head-title">국내기업</th>
+                                                <th class="table-head-title">바이어</th>
+                                                <th class="table-head-addbox">추가/제거</th>
+                                            </tr>
+                                        </thead>                                    
+                                    </table>
+                                </div>
+                                <div class="table-body" style="height: 150px;">
+                                    <!-- table영역에 스크롤 생성이 필요할 경우 상위 tag에 height 삽입 필수 -->   
+                                    <!-- height: (최소 노출 row갯수 * 50)px;-->
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="commbo-wrap horizontal--start">
+                                                        <div class="commbo">
+                                                            <div class="commbo-title">                                                    
+                                                                <input type="text" placeholder="(주)가빈" class="input text-input__search w-100">                                                             
+                                                            </div>
+                                                            <!-- commbo-container에 commbo-container--active추가시 콤보박스 활성화 -->
+                                                            <div class="commbo-container">
+                                                                <ul class="commbo-container__list">
+                                                                    <li class="commbo-container__item">1234567891011121314</li>
+                                                                    <li class="commbo-container__item">2</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>                
+                                                    </div>  
+                                                </td>
+                                                <td>
+                                                    <div class="commbo-wrap horizontal--start">
+                                                        <div class="commbo">
+                                                            <div class="commbo-title">                                                    
+                                                                <input type="text" placeholder="Apple Inc" class="input text-input__search w-100">   
+                                                            </div>
+                                                            <div class="commbo-container">
+                                                                <ul class="commbo-container__list">
+                                                                    <li class="commbo-container__item">1234567891011121314</li>
+                                                                    <li class="commbo-container__item">2</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>                
+                                                    </div>  
+                                                </td>  
+                                                <td>
+                                                    <div class="horizontal--center">
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/plus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </td>                                 
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="commbo-wrap horizontal--start">
+                                                        <div class="commbo">
+                                                            <div class="commbo-title">                                                    
+                                                                <input type="text" placeholder="기업명 또는 사업자 번호 검색" class="input text-input__search w-100">                                                             
+                                                            </div>
+                                                            <div class="commbo-container">
+                                                                <ul class="commbo-container__list">
+                                                                    <li class="commbo-container__item">1234567891011121314</li>
+                                                                    <li class="commbo-container__item">2</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>                
+                                                    </div>  
+                                                </td>
+                                                <td>
+                                                    <div class="commbo-wrap horizontal--start">
+                                                        <div class="commbo">
+                                                            <div class="commbo-title">                                                    
+                                                                <input type="text" placeholder="바이어명 또는 바이어 ID검색" class="input text-input__search w-100">   
+                                                            </div>
+                                                            <div class="commbo-container">
+                                                                <ul class="commbo-container__list">
+                                                                    <li class="commbo-container__item">1234567891011121314</li>
+                                                                    <li class="commbo-container__item">2</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>                
+                                                    </div>  
+                                                </td>  
+                                                <td>
+                                                    <div class="horizontal--center">
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/plus.svg" alt="">
+                                                        </button>
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/minus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </td>                                 
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-wrap">
+                                                        <div class="horizontal--start search-container">
+                                                            <input type="text" placeholder="Search" class="input text-input_search" disabled>                                    
+                                                            <button class="button button--link button--icon text-input__search-button button--icon-only">
+                                                                <img src="../img/search.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="horizontal--center">
+                                                        <button class="button button--link button--icon button--icon-only">
+                                                            <img src="../img/trash.svg" alt="">
+                                                        </button>
+                                                    </div>                                                    
+                                                </td>
+                                                <td>
+                                                    <div class="horizontal--center">
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/plus.svg" alt="">
+                                                        </button>
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/minus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="horizontal--center">
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/plus.svg" alt="">
+                                                        </button>
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/minus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="horizontal--center">
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/plus.svg" alt="">
+                                                        </button>
+                                                        <button class="button button--normal button--icon button--icon-only">
+                                                            <img src="../img/minus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>                                                                
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="modal-body-contents w-75">
+                    <form action="" class="form">
+                        <div class="form__item esencial horizontal--start">    
+                            <label for="" class="text-input__title">Long List 제목</label>
+                            <input type="text" placeholder="Long List 제목" class="input text-input_search">   
+                        </div>  
+                        <div class="form__item horizontal--start">    
+                            <label for="" class="text-input__title">CRM 사업 선택</label>
+                            <input type="text" placeholder="CRM 사업선택" class="input text-input_search">   
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+            <div class="modal-foot">
+                <div class="horizontal--center">
+                    <button class="button button--normal">취소</button>
+                    <button class="button button--primary">매칭하기</button>
+                </div>                
+            </div>
+        </div>        
+    </div>    
+</body>
+</html>

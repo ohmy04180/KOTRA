@@ -1,0 +1,212 @@
+@mixin font--xl{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+@mixin font--lg{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@mixin font--md {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+@mixin font--sm {
+    font-size: 0.85rem;
+    font-weight: normal;
+}
+
+@mixin font--basic{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+@mixin padding--lg{
+    padding: 36px;
+}
+@mixin padding-top--lg {
+    padding-top: 36px;
+}
+@mixin padding-left--lg {
+    padding-left: 36px;
+}
+@mixin padding-right--lg {
+    padding-right: 36px;
+}
+@mixin padding-bottom--lg {
+    padding-bottom: 36px;
+}
+
+@mixin padding--md{
+    padding: 24px;
+}
+@mixin padding-top--md {
+    padding-top: 24px;
+}
+@mixin padding-left--md {
+    padding-left: 24px;
+}
+@mixin padding-right--md {
+    padding-right: 24px;
+}
+@mixin padding-bottom--md {
+    padding-bottom: 24px;
+}
+
+@mixin padding--sm{
+    padding: 16px;
+}
+@mixin padding-top--sm {
+    padding-top: 16px;
+}
+@mixin padding-left--sm {
+    padding-left: 16px;
+}
+@mixin padding-right--sm {
+    padding-right: 16px;
+}
+@mixin padding-bottom--sm {
+    padding-bottom: 16px;
+}
+
+@mixin padding--xs{
+    padding: 8px;
+}
+@mixin padding-top--xs {
+    padding-top: 8px;
+}
+@mixin padding-left--xs {
+    padding-left: 8px;
+}
+@mixin padding-right--xs {
+    padding-right: 8px;
+}
+@mixin padding-bottom--xs {
+    padding-bottom: 8px;
+}
+
+@mixin padding--2xs{
+    padding: 4px;
+}
+@mixin padding-top--2xs {
+    padding-top: 4px;
+}
+@mixin padding-left--2xs {
+    padding-left: 4px;
+}
+@mixin padding-right--2xs {
+    padding-right: 4px;
+}
+@mixin padding-bottom--2xs {
+    padding-bottom: 4px;
+}
+
+@mixin margin--xl {
+    margin: 36px;
+}
+@mixin margin-top--xl {
+    margin-top: 36px;
+}
+@mixin margin-left--xl {
+    margin-left: 36px;
+}
+@mixin margin-right--xl {
+    margin-right: 36px;
+}
+@mixin margin-bottom--xl {
+    margin-bottom: 36px;
+}
+
+@mixin margin--lg {
+    margin: 24px;
+}
+@mixin margin-top--lg {
+    margin-top: 24px;
+}
+@mixin margin-left--lg {
+    margin-left: 24px;
+}
+@mixin margin-right--lg {
+    margin-right: 24px;
+}
+@mixin margin-bottom--lg {
+    margin-bottom: 24px;
+}
+
+@mixin margin--md{
+    margin: 16px;
+}
+@mixin margin-top--md {
+    margin-top: 16px;
+}
+@mixin margin-left--md {
+    margin-left: 16px;
+}
+@mixin margin-right--md {
+    margin-right: 16px;
+}
+@mixin margin-bottom--md {
+    margin-bottom: 16px;
+}
+
+@mixin margin--sm{
+    margin: 8px;
+}
+@mixin margin-top--sm {
+    margin-top: 8px;
+}
+@mixin margin-left--sm {
+    margin-left: 8px;
+}
+@mixin margin-right--sm {
+    margin-right: 8px;
+}
+@mixin margin-bottom--sm {
+    margin-bottom: 8px;
+}
+
+@mixin margin--xs{
+    margin: 4px;
+}
+@mixin margin-top--xs {
+    margin-top: 4px;
+}
+@mixin margin-left--xs {
+    margin-left: 4px;
+}
+@mixin margin-right--xs {
+    margin-right: 4px;
+}
+@mixin margin-bottom--xs {
+    margin-bottom: 4px;
+}
+
+@mixin flex-horizontal ($a){
+    display: flex;
+    justify-content: $a;
+    & > *{
+        @include margin-right--sm;
+    }
+    & > *:nth-last-child(1){
+        margin-right: 0;
+    }
+}
+
+@keyframes fade {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+$primary: #0055a2 !default;
+$secondary: #edf3f8 !default;
+// $secondary: rgba($color : #0055a2, $alpha: 0.1) !default;
+$border-primary: #888888 !default;
+$border-hover: #555555 !default;
+$border-surport: #dddddd !default;
+$backgraound-hover: #efefef !default;
+$backgraound-surport: rgba($color : #778490, $alpha: 0.03) !default;
+$backgraound-white: #ffffff !default;
+$backgraound-black: #000000 !default;
+$danger: #eb2f2f !default;

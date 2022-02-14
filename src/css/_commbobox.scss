@@ -1,0 +1,58 @@
+@import '_style.scss';
+
+.commbo-wrap{
+    min-width: fit-content;
+    overflow-y: visible;
+    width: 100%;
+}
+
+.commbo{
+    position: relative;
+    min-width: fit-content;
+    width: 100%
+}
+
+.commbo__text{
+    @include padding-bottom--2xs;
+    @include font--basic;
+    min-width: fit-content;
+}
+
+.commbo-title{
+    // @include padding-right--xs;
+}
+
+.commbo-container{
+    background-color: $backgraound-white;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    border: 1px solid $border-surport;
+    min-width: 100%;
+    display: none;
+    box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.1);
+    z-index: 1;
+    &.commbo-container--active{
+        display: block;
+    }
+}
+
+.commbo-container__list{
+    min-width: 100%;
+    width: max-content;
+}
+
+.commbo-container__item{
+    cursor: pointer;
+    width: 100%;
+    @include padding--xs;
+    @include font--sm;
+    &:hover{
+        background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
+    }    
+}
+
+
+.commbo-wrap--disabled{
+    opacity: 0.5;
+}

@@ -1,0 +1,42 @@
+@import '_style.scss';
+
+.information-title{
+    @include padding--sm;
+    @include margin-bottom--sm;
+    border: 1px solid $border-surport;    
+    height: 50px !important;
+    width: 100%;
+}
+
+.information-title__text{
+    @include font--basic;
+}
+
+.information-title__button {
+    display: none;
+    &.information-title__button--active{
+        display: block;
+    }
+}
+
+.information-container{
+    display: none;
+    &.information-container--open{
+        display: block;
+    }
+}
+
+.information-container thead{
+    th{
+        width: fit-content;
+    }
+}
+
+.information-container-menu{
+    @include margin-bottom--sm;
+    span{
+        @include font--sm
+    }
+}
+
+

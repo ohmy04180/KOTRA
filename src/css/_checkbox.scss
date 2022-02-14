@@ -1,0 +1,19 @@
+@import '_style.scss';
+
+
+.checkbox{
+    width: 100%;
+    label{
+        cursor: pointer;        
+        flex-grow: 1;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    input[type=checkbox]:checked + label{
+        color: $primary;
+        font-weight: 600;
+    }
+
+}

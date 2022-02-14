@@ -1,0 +1,148 @@
+@import '_style.scss';
+
+html, body, main, div, span, ul, li, form, label, input, button, img, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #444;      
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: underline;
+}
+
+a:link{
+    color: #333;
+}
+
+a:visited{
+    color: #888;
+}
+
+a:hover{
+    color: $primary;
+}
+
+a:active{
+    color: $primary;
+    font-weight: 600;
+}
+
+html{
+    font-size: 14px;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body{
+    position: relative;
+}
+
+.main{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;   
+    overflow-y: hidden;    
+}
+
+span{
+    display: block;
+}
+
+svg{
+    width: 100%;
+}
+
+.body{
+    @include padding--sm;
+    height: 100%;
+}
+
+.body-contents{
+    & + .body-contents{
+        @include margin-top--lg;
+    }    
+
+    .body-contents__item{
+        & + .body-contents__item{
+            @include margin-top--lg;      
+        }        
+    }
+}
+
+.horizontal--start{
+    @include flex-horizontal (flex-start);
+    align-items: center;
+}
+
+.horizontal--between{
+    @include flex-horizontal (space-between);
+    align-items: center;
+}
+
+.horizontal--end{
+    @include flex-horizontal (flex-end);
+    align-items: flex-end
+}
+
+.horizontal--center{
+    @include flex-horizontal (center);
+    align-items: center;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: column;    
+}
+
+.overflow-y{
+    overflow-y: hidden;
+}
+
+.w-100{
+    width: 100% !important;
+}
+
+.w-75{
+    width: 75% !important;
+    margin: 0 auto;
+}
+.w-50{
+    width: 50% !important;
+}
+
+.w-25{
+    width: 25% !important;
+}
+
+.w-100px{
+    width: 100px !important;
+}
+
+.h-100{
+    height: 100%;    
+}
+
+.esencial::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: -4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $danger;
+}
+
+.important{
+    color: $primary;
+    font-weight: 600;
+}

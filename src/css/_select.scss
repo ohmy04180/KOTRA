@@ -1,0 +1,135 @@
+@import '_style.scss';
+
+.select-wrap{
+    // min-width: fit-content;
+    overflow-y: visible;    
+    width: 115px
+}
+
+.select__title{
+    @include padding-bottom--2xs;
+    @include font--basic;
+    min-width: fit-content;
+    white-space: nowrap;
+}
+
+.horizontal--end{
+    .select__title{
+        white-space: pre-line;
+    }
+}
+
+select{
+    height: 34px;
+    @include padding--xs;
+    @include padding-right--lg;
+    @include font--basic;
+    border-radius: 2px;
+    appearance:none;
+    background: url('../img/chevron-down-medium.svg') no-repeat right 0 center;
+    border: 1px solid $border-primary;
+}
+select::-ms-expand {
+    display: none;            /* 화살표 없애기 for IE10, 11*/ 
+ }
+
+select:disabled{
+    background: url('../img/chevron-down-medium.svg') no-repeat right 0 center;    
+}
+/*
+
+
+.select-selector{
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.3s;
+    @include padding--xs;
+    @include font--sm;
+    position: relative;
+    &:focus{
+        outline: $primary;
+    }    
+}
+
+.select-container{
+    position: absolute;
+    bottom: 0;
+}
+
+*/
+
+
+.select__title{
+    @include padding-bottom--2xs;
+    @include font--basic;
+    min-width: fit-content;
+}
+.horizontal--start{
+    .select__title{
+        padding: 0;
+    }
+}
+
+.select-selector__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 2px;  
+    cursor: pointer;  
+    transition: 0.3s;    
+    @include padding-left--xs;
+    @include font--sm;     
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    min-width: 100%;
+}
+
+.select-selector__title{
+    @include padding-right--xs;
+}
+
+.select-container{
+    background-color: $backgraound-white;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    border: 1px solid $border-surport;
+    min-width: 100%;
+    display: none;
+    box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.1);
+    z-index: 1;
+    &.select-container--active{
+        display: block;
+    }
+}
+
+.select-container__list{
+    min-width: 100%;
+    width: max-content;
+}
+
+.select-container__item{
+    cursor: pointer;
+    width: 100%;
+    @include padding--xs;
+    @include font--sm;
+    &:hover{
+        background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
+    }    
+}
+
+
+.select-wrap--disabled{
+    opacity: 0.5;
+}
+
+.modal-body-contents .vertical{
+    .select-wrap{
+        @include margin-right--xl;  
+        &:nth-last-child(1){
+            margin-right: 0;
+        }    
+    }   
+}

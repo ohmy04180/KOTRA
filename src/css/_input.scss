@@ -1,0 +1,158 @@
+@import '_style.scss';
+
+.input-wrap{
+    width: 100%;
+    @include margin-right--xl;
+    &::nth-last-of-type(1){
+        margin-right: 0;
+    }
+    
+}  
+
+.text-input__label{
+    // @include margin-left--sm;
+    @include margin-right--md;
+    @include font--sm;
+    min-width:fit-content;
+}
+
+.text-input__title{
+    @include margin-right--sm;
+    @include font--basic;
+    min-width: fit-content;
+    white-space: nowrap;
+}
+
+.input{
+    @include padding--2xs;
+    @include font--sm;
+    border: 1px solid $border-primary;
+    border-radius: 2px;
+    &:hover{
+        border: 1px solid $border-hover;
+    }
+    &:focus{
+        outline: 1px solid $border-surport;
+    }
+    height: 34px;
+} 
+
+
+.search-container{    
+    // width: 100%;
+    // min-width: 150px;
+    position: relative;
+    // height: 100%;   
+}
+
+
+.text-input__clear-button{
+    bottom: 0;
+    right: 32px;
+    margin:0;
+}
+.text-input_search{
+    margin-right: 0;
+}
+.text-input__search-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;       
+    img{
+        width: 75%;
+    }
+}
+.text-input__search-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;   
+    border-left: 1px solid $border-primary; 
+    margin: 0;
+}
+
+// input[type=text],
+input[type=tel],
+input[type=number],
+input[type=email]{
+    flex-grow:1;
+}
+
+.modal input[type=text]{
+    flex-grow: 1;
+}
+
+input[type=radio]{
+    width: auto;
+}
+
+input[type=file]{
+    background: transparent;
+    display: none;
+}
+
+input::placeholder{
+    color: #ccc
+}
+
+input:disabled{
+    background-color: rgba($color : $backgraound-hover, $alpha : 0.5);
+    border: 1px solid $border-surport;  
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:focus {
+        border: 1px solid $border-surport;
+        background-color: rgba($color : $backgraound-hover, $alpha : 0.5);
+        cursor: not-allowed;
+    }
+    & + .text-input__search-icon,
+    & + .text-input__search-button{
+        opacity: 0.2;
+    }
+}
+
+input:read-only{
+    background: rgba($color : $backgraound-black, $alpha : 0.025);
+}
+
+.attachment{
+    border: none;    
+}
+
+.attachment__text{
+    @include margin-bottom--xs;
+    @include font--basic;
+}
+
+.attachment-container{
+    width: 100%;
+    @include padding--sm;
+    border: 1px solid $border-primary;
+    border-radius: 2px;
+}
+
+.attachment-alert{
+    @include margin-top--xs;
+}
+
+.attachment-alert__icon{
+    width: 20px;
+    img{
+        width: 100%;
+    }
+}
+
+.attachment-alert__text{
+    color: $danger;
+    @include font--sm;    
+}
+
+
+.attechment-file{
+    flex-grow: 1;
+}
+
+.horizontal--input{
+    input{
+        width: 100%;
+    }
+}

@@ -1,0 +1,97 @@
+@import '_style.scss';
+
+.button{
+    border-radius: 2px;  
+    cursor: pointer;  
+    transition: 0.3s;    
+    @include padding--xs;
+    @include font--sm;     
+    min-width: fit-content;
+    height: 34px;
+    white-space: nowrap;
+}
+
+.button--normal{
+    background-color: $backgraound-white;
+    border: 1px solid $border-primary;
+    &:hover{
+        background-color: rgba($color : $backgraound-hover, $alpha : 0.7)
+    }
+    &:active{
+        background-color: $backgraound-white;
+    }
+}
+
+.button--primary{
+    background-color: $primary;
+    border: 1px solid transparent;
+    color: #fff;
+    &:hover{
+        background-color: rgba($color : $primary, $alpha : 0.8)
+    }
+    &:active{
+        background-color: $primary;
+    }
+}
+
+.button--link{
+    border: none;
+    background-color: transparent;
+    &:hover img{
+        opacity: 0.7;
+    }
+    &:active img{
+        opacity: 0.5;
+    }
+}
+
+.button__text{
+    @include font--basic    
+}
+
+.button--icon{
+    .button__text{
+        @include padding-right--xs
+    }
+}
+
+
+.button--icon{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        vertical-align: middle;
+    }
+    &.button--lg{
+        @include padding--xs;
+        height: auto;
+    }
+}
+
+.button--icon-only{
+    img{
+        width: 75%;
+    }
+}
+
+button:disabled{
+    background-color: rgba($color : $backgraound-hover, $alpha : 0.5);
+    border: 1px solid $border-surport;
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:focus {
+        background-color: rgba($color : $backgraound-hover, $alpha : 0.5);
+        cursor: not-allowed;
+        img{
+            opacity: 0.2;
+        }
+    }
+    .select-selector__title{
+        color: #ccc
+    }
+    img{
+        opacity: 0.2;
+    }
+}

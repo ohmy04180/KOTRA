@@ -1,0 +1,64 @@
+@import '_style.scss';
+
+.mail-container{
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
+    border: 1px solid $border-surport;
+}
+
+.mail-container-title{
+    @include margin-bottom--sm;
+    @include font--md;
+}
+
+.mail-company__list{
+    height: 100%;
+}
+
+
+.mail-company__item{
+    cursor: pointer;
+    @include padding--xs;
+    @include font--sm;
+    display: block;
+    &:nth-of-type(2n){
+        background-color: $backgraound-surport;
+    }
+    &:hover{
+        background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
+    }    
+    &.mail-company__item--selected > *{
+        color: $primary;
+        font-weight: 600;
+    }
+}
+.mail-company__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mail-company__item--name{
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mail-company__item--num{
+    display: inline-block;
+}
+
+.mail-reciver__list{
+    height: 100%;
+}
+
+.mail-reciver__item{
+    cursor: pointer;
+    @include padding--xs;
+    @include font--sm;
+    &:nth-of-type(2n){
+        background-color: $backgraound-surport;
+    }
+    &:hover{
+        background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
+    }   
+}

@@ -1,0 +1,28 @@
+@import '_style.scss';
+
+.floating-wrap{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(640px + 16px, -50%);
+    align-items: center;
+    z-index: 99;
+
+    button{
+        box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.2);
+    }    
+}
+
+.floating-group{
+    align-items: center;
+    
+    & + .floating-group{
+        @include padding-top--sm;
+    }
+}
+
+.floating{
+    & + .floating{
+        @include margin-top--xs;
+    }
+}

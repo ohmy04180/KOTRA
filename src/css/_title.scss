@@ -1,0 +1,30 @@
+@import '_style.scss';
+
+.title{    
+    margin: 0 auto;
+    border-bottom: 1px solid $border-primary;
+    @include padding--sm;
+    // background-color: $secondary;
+}
+
+.title__text{    
+    @include font--lg;
+    @include margin-right--md;
+}
+
+.title__subtext{
+    @include font--basic;
+}
+
+.body__title{
+    text-align: center;
+    @include font--xl;
+    // @include margin-top--sm;
+    @include margin--lg;
+    @include margin-right--xs;
+}
+
+.body__title--edit{
+    flex-grow: 0;
+    width: 30%;
+}

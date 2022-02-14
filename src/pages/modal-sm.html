@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal-sm</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/checkbox.css">
+    <link rel="stylesheet" href="../css/commbobox.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/date-picker.css">
+    <link rel="stylesheet" href="../css/editor.css">
+    <link rel="stylesheet" href="../css/floating.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/inform.css">
+    <link rel="stylesheet" href="../css/information.css">
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="../css/loader-spinner.css">
+    <link rel="stylesheet" href="../css/mail.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/pagenation.css">
+    <link rel="stylesheet" href="../css/select.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/tag.css">
+    <link rel="stylesheet" href="../css/title.css"> 
+    <link rel="stylesheet" href="../css/toogle.css">   -->
+<body>
+    <!-- modal-container에  modal-container--active 클래스 추가 될 경우 모달 활성화 -->
+    <div class="modal-container modal-container--active">
+        <div class="modal modal--sm vertical">
+            <div class="modal-head horizontal--between">
+                <span class="modal-head__title">
+                    알림
+                </span>
+                <button class="button button--icon button--link">
+                    <img src="../img/close-medium.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-contents">
+                    <span class="modal-body__title">
+                        전체 삭제 하시겠습니까?
+                    </span>
+                </div>
+                <div class="modal-body-contents">
+                    <span class="modal-body__subtext">
+                        Long List가 전체 삭제되고 초기 설정 화면으로 이동합니다.
+                    </span>
+                </div>
+                <div class="modal-body-contents">
+                    <button class="button button--normal horizontal--start button--icon button--lg">
+                        <img src="../img/download.svg" alt="">
+                        <span class="button__text">신청 양식 다운로드</span>
+                    </button>
+                </div>
+                <div class="modal-body-contents">
+                    <div class="attachment">
+                        <span class="attachment__text">엑셀 업로드</span>
+                        <div class="attachment-container horizontal--start">
+                            <button class="button button--normal">
+                                <label for="attachment" class="attachment__button">파일 첨부</label>
+                                <input type="file" name="attachment" id="attachment" class="">
+                            </button>  
+                            <div>
+                                <span class="attachment__file">첨부 된 파일명</span>
+                            </div>
+                        </div>                        
+                        <div class="horizontal--start attachment-alert">
+                             <span class="attachment-alert__icon">
+                                <img src="../img/warning-fill.svg" alt="">
+                             </span>                            
+                            <span class="attachment-alert__text">양식에 맞게 재작성 해주세요</span>
+                        </div>                 
+                    </div>                    
+                </div>
+            </div>
+            <div class="modal-foot">
+                <div class="horizontal--center">
+                    <button class="button button--normal">취소</button>
+                    <button class="button button--primary">확인</button>
+                </div>                    
+            </div>
+        </div>        
+    </div>    
+</body>

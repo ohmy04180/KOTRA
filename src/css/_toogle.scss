@@ -1,0 +1,68 @@
+@import '_style.scss';
+
+.toogle{
+    position: relative;
+
+    input[type=checkbox]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    .toogle-switch{
+        position: relative;
+        width: 44px;
+        height: 22px;
+        border-radius: 11px;
+        background-color: $secondary;
+        display: block;
+        transition: .3s;
+        cursor: pointer;
+        &::before{
+            content: '';
+            width: 18px;
+            height: 18px;
+            border-radius: 10px;
+            background-color: $backgraound-white;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            transition: .3s;
+            box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.2);
+        }    
+    }
+
+    input[type=checkbox]:checked + .toogle-switch{
+        background: $primary;
+        transition: .3s;
+    }
+
+    input[type=checkbox]:checked + .toogle-switch::before{
+        left: 24px;
+        transition: .3s;
+        box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.7);
+    }
+}
+
+.toogle-wrap{
+    .toogle-title{
+        line-height: 34px;
+        @include font--basic;
+        min-width: fit-content;
+        white-space: nowrap;
+    }
+    &.vertical{
+        .toogle-title{
+            line-height: normal;
+            @include padding-bottom--2xs;
+            @include font--basic;
+            min-width: fit-content;
+            white-space: nowrap;
+        }    
+        .toogle{
+            padding: 6px 0;
+        }
+    }    
+}
+

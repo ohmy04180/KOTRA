@@ -1,0 +1,57 @@
+@import '_style.scss';
+
+.loader-spinner-wrap{
+    background-color: rgba($color: $backgraound-white, $alpha: 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 9999;
+}
+
+.loader-spinner{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-spinner__spoke{
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 18px;
+    background: $border-primary;
+    border-radius: 3px;
+    // left: 50%;
+    // top: 50%;
+    transform-origin: left top;
+    opacity: 0;
+    animation: fade 1.2s linear infinite;
+}
+
+.loader-spinner__spoke:nth-child(1) { transform: rotate(0deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(2) { transform: rotate(30deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(3) { transform: rotate(60deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(4) { transform: rotate(90deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(5) { transform: rotate(120deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(6) { transform: rotate(150deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(7) { transform: rotate(180deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(8) { transform: rotate(210deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(9) { transform: rotate(240deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(10) { transform: rotate(270deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(11) { transform: rotate(300deg) translate(-50%, 100%); }
+.loader-spinner__spoke:nth-child(12) { transform: rotate(330deg) translate(-50%, 100%); }
+
+.loader-spinner__spoke:nth-child(2) { animation-delay: 0.04s; }
+.loader-spinner__spoke:nth-child(3) { animation-delay: 0.12s; }
+.loader-spinner__spoke:nth-child(4) { animation-delay: 0.20s; }
+.loader-spinner__spoke:nth-child(5) { animation-delay: 0.28s; }
+.loader-spinner__spoke:nth-child(6) { animation-delay: 0.36s; }
+.loader-spinner__spoke:nth-child(7) { animation-delay: 0.44s; }
+.loader-spinner__spoke:nth-child(8) { animation-delay: 0.52s; }
+.loader-spinner__spoke:nth-child(9) { animation-delay: 0.60s; }
+.loader-spinner__spoke:nth-child(10) { animation-delay: 0.68s; }
+.loader-spinner__spoke:nth-child(11) { animation-delay: 0.76s; }
+.loader-spinner__spoke:nth-child(12) { animation-delay: 0.82s; }
