@@ -1,80 +1,79 @@
-@import '_style.scss';
+@import "_style.scss";
 
-.tag{
-    width: 100%;
-    border: 1px solid $border-surport;
-    @include padding--xs;
-    @include padding-right--lg;
-    position: relative;
+.tag {
+  width: 100%;
+  border: 1px solid $border-surport;
+  @include padding--xs;
+  @include padding-right--lg;
+  position: relative;
 }
-.tag-wrap{    
-    flex-wrap: wrap;    
+.tag-wrap {
+  flex-wrap: wrap;
 }
 
-.tag__button{
+.tag__button {
+  background-color: $secondary;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    background-color: rgba($color: $secondary, $alpha: 0.6);
+  }
+  &:active {
     background-color: $secondary;
-    border: 1px solid transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &:hover{
-        background-color: rgba($color : $secondary, $alpha : 0.6)
-    }
-    &:active{
-        background-color: $secondary;
-    }
-    align-items: center;
-    @include margin-top--sm;
-    @include margin-bottom--sm;
+  }
+  align-items: center;
+  @include margin-top--sm;
+  @include margin-bottom--sm;
 }
 
-.tag__text{
-    // color: #fff;
-    @include margin-right--sm;
-    @include margin-left--sm;
-    @include font--basic;
+.tag__text {
+  // color: #fff;
+  @include margin-right--sm;
+  @include margin-left--sm;
+  @include font--basic;
 }
 
-.tag-commbo__button{
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.tag-combo__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.tag-commbo-container{
-    background-color: $backgraound-white;
-    position: absolute;
-    top: calc(100% + 2px);
-    left: 0;
-    border: 1px solid $border-surport;
-    width: 100%;
-    display: none;
-    box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.1);
-    z-index: 1;
-    &.tag-commbo-container--active{
-        display: block;
-    }
-    overflow-y: auto;
-    height: 150px;
+.tag-combo-container {
+  background-color: $backgraound-white;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  border: 1px solid $border-surport;
+  width: 100%;
+  display: none;
+  box-shadow: 0 2px 4px 0 rgba($color: $backgraound-black, $alpha: 0.1);
+  z-index: 1;
+  &.tag-combo-container--active {
+    display: block;
+  }
+  overflow-y: auto;
+  height: 150px;
 }
 
-.tag-commbo-container__list{
-    min-width: 100%;
-    width: max-content;
+.tag-combo-container__list {
+  min-width: 100%;
+  width: max-content;
 }
 
-.tag-commbo-container__item{
-    cursor: pointer;
-    width: 100%;
-    @include padding--xs;
-    @include font--sm;
-    &:hover{
-        background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
-    } 
-    &.tag-commbo-container__item--selected{
-        color: $primary;
-        font-weight: 500;
-        // background: $backgraound-surport;
-    }   
+.tag-combo-container__item {
+  cursor: pointer;
+  width: 100%;
+  @include padding--xs;
+  @include font--sm;
+  &:hover {
+    background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
+  }
+  &.tag-combo-container__item--selected {
+    color: $primary;
+    font-weight: 500;
+    // background: $backgraound-surport;
+  }
 }
-

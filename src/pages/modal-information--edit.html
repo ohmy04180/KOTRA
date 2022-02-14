@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <!-- <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/checkbox.css">
-    <link rel="stylesheet" href="../css/commbobox.css">
+    <link rel="stylesheet" href="../css/combobox.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/date-picker.css">
     <link rel="stylesheet" href="../css/editor.css">
@@ -24,9 +25,10 @@
     <link rel="stylesheet" href="../css/select.css">
     <link rel="stylesheet" href="../css/table.css">
     <link rel="stylesheet" href="../css/tag.css">
-    <link rel="stylesheet" href="../css/title.css"> 
+    <link rel="stylesheet" href="../css/title.css">
     <link rel="stylesheet" href="../css/toogle.css">   -->
 </head>
+
 <body>
     <!-- modal-container에  modal-container--active 클래스 추가 될 경우 모달 활성화 -->
     <div class="modal-container modal-container--active ">
@@ -45,9 +47,9 @@
                         <span class="modal-body__title">Apple Inc</span>
                         <button class="button button--normal button--primary">저장</button>
                     </div>
-                </div>                
+                </div>
                 <div class="modal-body-contents">
-                    <!-- 
+                    <!--
                         information-title__button에 information-title__button--avtive 클래스가 추가되어 있는 버튼만 활성화
                         information-container에  information-container--open 클래스 추가시 상세내용 활성화
                     -->
@@ -70,12 +72,12 @@
                                             <div class="horizontal--start">
                                                 <input type="text" placeholder="BY030151" class="input" readonly>
                                                 <label for="DUNS_NUMBER" class="text-input__title">DUNS NUMBER</label>
-                                                <input type="text" id="DUNS_NUMBER" placeholder="DUNS_NUMBER" class="input">       
-                                            </div>                                            
+                                                <input type="text" id="DUNS_NUMBER" placeholder="DUNS_NUMBER" class="input">
+                                            </div>
                                         </td>
                                         <th class="important">바이어유형</th>
                                         <td>
-                                            <div class="horizontal--start">                        
+                                            <div class="horizontal--start">
                                                 <input type="radio" name="radio-2" id="radio-2-1">
                                                 <label for="radio-2-1" class="text-input__label">글로벌</label>
                                                 <input type="radio" name="radio-2" id="radio-2-2">
@@ -84,7 +86,7 @@
                                                 <label for="radio-2-3" class="text-input__label">글로벌</label>
                                             </div>
                                         </td>
-                                    </tr> 
+                                    </tr>
                                     <tr>
                                         <th class="important">바이어명(영문)</th>
                                         <td>
@@ -93,18 +95,18 @@
                                                 <div class="select-wrap horizontal--start">
                                                     <select name="바이어영문" id="미선택" class="w-100">
                                                         <option value="직접입력" selected>직접입력</option>
-                                                        <option value="1" >1</option>
+                                                        <option value="1">1</option>
                                                         <option value="2">2</option>
                                                     </select>
                                                 </div>
                                                 <button class="button button--normal">D&B정보</button>
-                                            </div>                                            
+                                            </div>
                                         </td>
                                         <th>바이어명(현지어)</th>
                                         <td>
                                             <input type="text" id="nativename" placeholder="nativemane" class="input">
                                         </td>
-                                    </tr>                  
+                                    </tr>
                                     <tr>
                                         <th class="important">대표자명(영문)</th>
                                         <td>
@@ -114,13 +116,13 @@
                                         <td>
                                             <input type="text" id="nativeowner" placeholder="nativeowner" class="input">
                                         </td>
-                                    </tr>                           
+                                    </tr>
                                     <tr>
                                         <th>대표자직위</th>
                                         <td colspan="3">
                                             <input type="text" id="ownerposition" placeholder="ownerposition" class="input w-25">
                                         </td>
-                                    </tr>                           
+                                    </tr>
                                     <tr>
                                         <th class="important">국가</th>
                                         <td colspan="3">
@@ -132,7 +134,7 @@
                                                 </select>
                                             </div>
                                         </td>
-                                    </tr>                           
+                                    </tr>
                                     <tr>
                                         <th class="important">관할무역관</th>
                                         <td>
@@ -148,7 +150,7 @@
                                         <td>
                                             <input type="text" id="written" placeholder="실리콘벨리무역관" class="input" readonly>
                                         </td>
-                                    </tr>             
+                                    </tr>
                                     <tr>
                                         <th class="important">대표전화번호</th>
                                         <td>
@@ -158,7 +160,7 @@
                                         <td>
                                             <input type="tel" id="fax" placeholder="02-1234-5678" class="input" readonly>
                                         </td>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <th>대표이메일</th>
                                         <td>
@@ -166,19 +168,19 @@
                                         </td>
                                         <th>홈페이지</th>
                                         <td>
-                                            <div class="horizontal--start">                        
+                                            <div class="horizontal--start">
                                                 <input type="radio" name="radio-3" id="radio-3-1">
                                                 <label for="radio-3-1" class="text-input__label">있음</label>
                                                 <input type="url" id="url" placeholder="http://" class="input">
                                                 <input type="radio" name="radio-3" id="radio-3-2">
                                                 <label for="radio-3-2" class="text-input__label">없음</label>
-                                            </div>                                            
+                                            </div>
                                         </td>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <th>주소구분</th>
                                         <td>
-                                            <div class="horizontal--start">                        
+                                            <div class="horizontal--start">
                                                 <input type="radio" name="radio-4" id="radio-4-1">
                                                 <label for="radio-4-1" class="text-input__label">본사</label>
                                                 <input type="radio" name="radio-4" id="radio-4-2">
@@ -191,32 +193,32 @@
                                         <td>
                                             <input type="text" id="zipcode" placeholder="zipcode" class="input" readonly>
                                         </td>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <th>주소(영문)</th>
                                         <td colspan="3">
                                             <input type="text" id="engaddress" placeholder="engaddress" class="input">
                                         </td>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <th>주소(현지어)</th>
                                         <td colspan="3">
                                             <input type="text" id="nativeaddress" placeholder="nativeaddress" class="input">
                                         </td>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <th>대표바이어 ID</th>
                                         <td colspan="3">
                                             <input type="text" id="buyerid" placeholder="buyerid" class="input w-25">
                                         </td>
-                                    </tr>                                                                             
+                                    </tr>
                                 </tbody>
                             </table>
-                        </div>                        
-                    </div>                    
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-body-contents">
-                    <!-- 
+                    <!--
                         information-title__button에 information-title__button--avtive 클래스가 추가되어 있는 버튼만 활성화
                         information-container에  information-container--open 클래스 추가시 상세내용 활성화
                     -->
@@ -238,57 +240,57 @@
                                         <td>0000.00.00</td>
                                         <th>종업원 수(명)</th>
                                         <td>00</td>
-                                    </tr> 
+                                    </tr>
                                     <tr>
                                         <th>연간매출액(USD 천불 기준)</th>
                                         <td>156,510,000,000</td>
                                         <th>연간수입액(USD 천불 기준)</th>
                                         <td></td>
-                                    </tr>                  
+                                    </tr>
                                     <tr>
                                         <th>대한수입액(USD 천불 기준)</th>
                                         <td></td>
                                         <th>대표품목</th>
                                         <td>95014</td>
-                                    </tr>                           
+                                    </tr>
                                     <tr>
                                         <th>주소(영문)</th>
                                         <td colspan="3">PC 주변기기 & 소모품 / second source</td>
-                                    </tr>                           
+                                    </tr>
                                     <tr>
                                         <th>주요수입국가</th>
                                         <td></td>
                                         <th>한국과의 거래 경험</th>
                                         <td>
-                                            <div class="toogle">                        
+                                            <div class="toogle">
                                                 <input type="checkbox" id="toogleBtn">
                                                 <label for="toogleBtn" class="toogle-switch"></label>
-                                            </div>                                            
+                                            </div>
                                         </td>
-                                    </tr>                           
+                                    </tr>
                                     <tr>
                                         <th>교신가능언어</th>
                                         <td></td>
                                         <th>교신지원여부</th>
                                         <td>
-                                            <div class="horizontal--start">                        
+                                            <div class="horizontal--start">
                                                 <input type="radio" name="radio-5" id="radio-5-1">
                                                 <label for="radio-5-1" class="text-input__label">있음</label>
                                                 <input type="radio" name="radio-5" id="radio-5-2">
                                                 <label for="radio-5-2" class="text-input__label">없음</label>
                                             </div>
                                         </td>
-                                    </tr>  
+                                    </tr>
                                     <tr>
                                         <th>비지니스유형</th>
                                         <td colspan="3">
-                                            262 Manufac. 
+                                            262 Manufac.
                                         </td>
-                                    </tr>                
+                                    </tr>
                                     <tr>
                                         <th>비고</th>
                                         <td colspan="3"></td>
-                                    </tr>               
+                                    </tr>
                                     <tr>
                                         <th>파일첨부</th>
                                         <td colspan="3">
@@ -312,18 +314,18 @@
                                                     <button class="button button--normal">
                                                         <label for="attachment" class="attachment__button">파일 첨부</label>
                                                         <input type="file" name="attachment" id="attachment" class="">
-                                                    </button>                                                     
-                                                </div>                 
-                                            </div>     
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </td>
-                                    </tr>                                                                            
+                                    </tr>
                                 </tbody>
                             </table>
-                        </div>                        
-                    </div>                    
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-body-contents">
-                    <!-- 
+                    <!--
                         information-title__button에 information-title__button--avtive 클래스가 추가되어 있는 버튼만 활성화
                         information-container에  information-container--open 클래스 추가시 상세내용 활성화
                     -->
@@ -335,14 +337,14 @@
                         <span class="button--icon information-title__button information-title__button--active">
                             <img src="../img/chevron-down-medium.svg" alt="">
                         </span>
-                    </button>                
-                    <div class="information-container information-container--open">                              
+                    </button>
+                    <div class="information-container information-container--open">
                         <div class="information-container-menu horizontal--between">
                             <div class="horizontal--start">
                                 <button class="button button--normal">물품추가</button>
-                                <button class="button button--normal">물품추가</button>    
-                            </div>                       
-                            <span>*품목명은 직접 기술하여 주십시오.</span>                    
+                                <button class="button button--normal">물품추가</button>
+                            </div>
+                            <span>*품목명은 직접 기술하여 주십시오.</span>
                         </div>
                         <div class="table-container">
                             <table class="table">
@@ -395,11 +397,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>                        
-                    </div>                    
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-body-contents">
-                    <!-- 
+                    <!--
                         information-title__button에 information-title__button--avtive 클래스가 추가되어 있는 버튼만 활성화
                         information-container에  information-container--open 클래스 추가시 상세내용 활성화
                     -->
@@ -411,39 +413,39 @@
                         <span class="button--icon information-title__button information-title__button--active">
                             <img src="../img/chevron-down-medium.svg" alt="">
                         </span>
-                    </button>                                  
-                    <div class="information-container information-container--open">   
+                    </button>
+                    <div class="information-container information-container--open">
                         <div class="information-container-menu horizontal--end">
                             <div class="select-wrap vertical">
                                 <span class="select__title">상담방식</span>
                                 <select name="미선택" id="미선택" class="">
                                     <option value="미선택" selected>미선택</option>
-                                    <option value="가나다" >가나다</option>
-                                    <option value="가나다라마바사" >가나다라마바사</option>
+                                    <option value="가나다">가나다</option>
+                                    <option value="가나다라마바사">가나다라마바사</option>
                                 </select>
                             </div>
                             <div class="select-wrap vertical">
                                 <span class="select__title">관심여부</span>
                                 <select name="미선택" id="미선택" class="">
                                     <option value="미선택" selected>미선택</option>
-                                    <option value="가나다" >가나다</option>
-                                    <option value="가나다라마바사" >가나다라마바사</option>
+                                    <option value="가나다">가나다</option>
+                                    <option value="가나다라마바사">가나다라마바사</option>
                                 </select>
                             </div>
                             <div class="select-wrap vertical">
                                 <span class="select__title">HS Code적합도</span>
                                 <select name="미선택" id="미선택" class="">
                                     <option value="미선택" selected>미선택</option>
-                                    <option value="가나다" >가나다</option>
-                                    <option value="가나다라마바사" >가나다라마바사</option>
+                                    <option value="가나다">가나다</option>
+                                    <option value="가나다라마바사">가나다라마바사</option>
                                 </select>
                             </div>
                             <div class="select-wrap vertical">
                                 <span class="select__title">상담희망여부</span>
                                 <select name="미선택" id="미선택" class="">
                                     <option value="미선택" selected>미선택</option>
-                                    <option value="가나다" >가나다</option>
-                                    <option value="가나다라마바사" >가나다라마바사</option>
+                                    <option value="가나다">가나다</option>
+                                    <option value="가나다라마바사">가나다라마바사</option>
                                 </select>
                             </div>
                             <div class="date-picker-wrap">
@@ -452,15 +454,15 @@
                                     <div class="date-picker-selector__separator">
                                         <span>&sim;</span>
                                     </div>
-                                    <input type="text" class="date-picker-selector__input" placeholder="yyyy/mm/dd" autocomplete="off">                            
+                                    <input type="text" class="date-picker-selector__input" placeholder="yyyy/mm/dd" autocomplete="off">
                                     <button class="button button--link button--icon button--icon-only date-picker-selector__button">
                                         <img src="../img/calendar.svg" alt="">
                                     </button>
-                                </div>                     
+                                </div>
                             </div>
-                            <input type="text" placeholder="Search" class="input text-input__search">                            
-                            <button class="button button--normal button--primary">검색</button>                                
-                        </div> 
+                            <input type="text" placeholder="Search" class="input text-input__search">
+                            <button class="button button--normal button--primary">검색</button>
+                        </div>
                         <div class="table-wrap" style="height: 200px;">
                             <!-- table영역에 스크롤 생성이 필요할 경우 상위 tag에 height 삽입 필수 -->
                             <div class="table-container">TABLE</div>
@@ -488,18 +490,18 @@
                                     <img src="../img/chevron-double-right-medium.svg" alt="">
                                 </button>
                             </div>
-                        </div>                 
-                    </div>                                      
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-foot">
                 <div class="horizontal--center">
                     <button class="button button--normal">취소</button>
                     <button class="button button--primary">저장하기</button>
-                </div>                
+                </div>
             </div>
-        </div>        
-    </div>    
+        </div>
+    </div>
 </body>
 
 </html>
