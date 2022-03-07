@@ -24,11 +24,9 @@
     height: 18px;
     background: $border-primary;
     border-radius: 3px;
-    // left: 50%;
-    // top: 50%;
     transform-origin: left top;
     opacity: 0;
-    animation: fade 1.2s linear infinite;
+    animation: fade 0.9s linear infinite;
 }
 
 .loader-spinner__spoke:nth-child(1) { transform: rotate(0deg) translate(-50%, 100%); }

@@ -13,23 +13,24 @@ ul, li, ol{
 
 a{
     text-decoration: underline;
+
+    &:link{
+        color: #333;
+    }
+
+    &:visited{
+        color: #888;
+    }
+
+    &:hover{
+        color: $primary;
+    }
+
+    &:active{
+        color: $primary;
+        font-weight: 600;
 }
 
-a:link{
-    color: #333;
-}
-
-a:visited{
-    color: #888;
-}
-
-a:hover{
-    color: $primary;
-}
-
-a:active{
-    color: $primary;
-    font-weight: 600;
 }
 
 html{
@@ -143,6 +144,6 @@ svg{
 }
 
 .important{
-    color: $primary;
+    color: $primary !important;
     font-weight: 600;
 }

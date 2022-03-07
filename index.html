@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="./src/css/index.css">
-    <!-- <link rel="stylesheet" href="./src/css/button.css">
+    <!-- <link rel="stylesheet" href="./src/css/burger.css">
+    <link rel="stylesheet" href="./src/css/button.css">
     <link rel="stylesheet" href="./src/css/checkbox.css">
     <link rel="stylesheet" href="./src/css/combobox.css">
     <link rel="stylesheet" href="./src/css/common.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="./src/css/inform.css">
     <link rel="stylesheet" href="./src/css/information.css">
     <link rel="stylesheet" href="./src/css/input.css">
+    <link rel="stylesheet" href="./src/css/intro.css">
     <link rel="stylesheet" href="./src/css/loader-spinner.css">
     <link rel="stylesheet" href="./src/css/mail.css">
     <link rel="stylesheet" href="./src/css/modal.css">
@@ -30,28 +32,70 @@
 
 </head>
 
-<body>
-    <div class="main">
-        <div class="floating-wrap vertical">
-            <div class="floating">
-                <button class="button button--primary button--icon button--icon-only">
-                    <img src="./src/img/chevron-up.svg" alt="">
-                </button>
-            </div>
-            <div class="floating">
-                <button class="button button--normal button--icon button--icon-only">
-                    <img src="./src/img/chevron-down.svg" alt="">
-                </button>
-            </div>
-            <div class="floating">
-                <button class="button button--link button--icon button--icon-only">
-                    <img src="./src/img/plus.svg" alt="">
-                </button>
-            </div>
+<body>    
+    <div class="floating-wrap vertical">
+        <div class="floating">
+            <button class="button button--primary button--icon button--icon-only">
+                <img src="./src/img/chevron-up-w.svg" alt="">
+            </button>
         </div>
-        <div class="title horizontal--start w-100">
-            <span class="title__text">상담추천목록 생성</span>
-            <!-- <span class="title__subtext">원하는 조건으로 상담희망목록을 만들 수 있습니다.</span>     -->
+        <div class="floating">
+            <button class="button button--normal button--icon button--icon-only">
+                <img src="./src/img/chevron-down.svg" alt="">
+            </button>
+        </div>
+        <div class="floating">
+            <button class="button button--link button--icon button--icon-only">
+                <img src="./src/img/plus.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="main">        
+        <div class="title horizontal--between">
+            <div class="horizontal--start">
+                <span class="title__text">상담추천목록 생성</span>
+                <!-- <span class="title__subtext">원하는 조건으로 상담희망목록을 만들 수 있습니다.</span>     -->
+            </div>        
+            <div class="horizontal--start">
+                <a href="http://www.kotra.or.kr" class="important" target="_blank">Tribig 바로가기</a>
+                <div class="burger-wrap">
+                    <!-- burger-menu에 burger-menu--active클래스 추가시 활성화 -->
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="burger-menu burger-menu--active">
+                        <ul class="burger-menu__list">
+                            <!-- burger-menu__item에 burger-menu__item--selected클래스 추가시 선택된상태 활성화 -->
+                            <li class="burger-menu__item">
+                                <a href="#" class="burger-menu__text">매칭 작업 생성</a>
+                            </li>
+                            <li class="burger-menu__item burger-menu__item--selected">
+                                <a href="#" class="burger-menu__text">상담추천목록</a>
+                            </li>
+                            <li class="burger-menu__item">
+                                <a href="#" class="burger-menu__text">상담추천목록관리</a>
+                            </li>
+                            <li class="burger-menu__item">
+                                <a href="#" class="burger-menu__text">상담추천목록관리상담추천목록관리상담추천목록관리상담추천목록관리</a>
+                            </li>           
+                            <li class="burger-menu__item">
+                                <a href="#" class="burger-menu__text">매칭 작업 생성</a>
+                            </li>
+                            <li class="burger-menu__item">
+                                <a href="#" class="burger-menu__text">상담추천목록</a>
+                            </li>
+                            <li class="burger-menu__item">
+                                <a href="#" class="burger-menu__text">상담추천목록관리</a>
+                            </li>
+                            <li class="burger-menu__item">
+                                <a href="#" class="burger-menu__text">상담추천목록관리상담추천목록관리상담추천목록관리상담추천목록관리</a>
+                            </li>     
+                        </ul>
+                    </div>
+                </div>
+            </div>            
         </div>
         <div class="body">
             <div class="body-contents">
@@ -75,11 +119,11 @@
                     <form action="" class="form">
                         <div class="form__item esencial horizontal--start">
                             <label for="" class="text-input__title">상담추천목록 제목</label>
-                            <input type="text" placeholder="제목 입력" class="input">
+                            <input type="text" placeholder="제목 입력" class="input w-100">
                         </div>
                         <div class="form__item horizontal--start">
                             <label for="" class="text-input__title">CRM 사업입력</label>
-                            <input type="text" placeholder="사업명 입력" class="input">
+                            <input type="text" placeholder="사업명 입력" class="input w-100">
                         </div>
                         <div class="form__item horizontal--start">
                             <span class="text-input__title">매칭 기준 기업</span>

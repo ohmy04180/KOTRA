@@ -1,3 +1,8 @@
+@mixin font--2xl{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 @mixin font--xl{
     font-size: 1.75rem;
     font-weight: 600;
@@ -13,13 +18,13 @@
     font-weight: normal;
 }
 
-@mixin font--sm {
-    font-size: 0.85rem;
+@mixin font--basic{
+    font-size: 1rem;
     font-weight: normal;
 }
 
-@mixin font--basic{
-    font-size: 1rem;
+@mixin font--sm {
+    font-size: 0.85rem;
     font-weight: normal;
 }
 

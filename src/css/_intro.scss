@@ -1,0 +1,79 @@
+@import "_style.scss";
+
+.intro-wrap{
+    // background-color: aqua;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-title{
+    flex-direction: column;
+    @include padding-bottom--lg;
+}
+
+.intro-title__main{
+    @include font--2xl;
+}
+
+.intro-title__sub{
+    @include font--md;
+}
+
+.intro-button-group-wrap{
+    @include padding-top--lg;
+    align-items: flex-start
+}
+
+.intro-button-group{
+    width: 350px;
+
+    & + &{
+        @include margin-left--xl;
+    }
+}
+
+
+.button--intro{
+    background-color: $backgraound-white;
+    border: 2px solid $primary;
+    width: 100%;
+    height: 200px;
+    @include margin-bottom--lg;
+
+    &:hover{
+        background-color: $primary;
+        
+        span{
+            color: #ffff;
+        }
+    }
+
+    &:active{
+        background-color: rgba($color: $primary, $alpha: 0.7)
+    }
+}
+
+.intro-button-title__main{
+    @include font--xl;
+    @include padding-bottom--xs;
+}
+
+.intro-button-title__sub{
+    @include font--md;
+}
+
+.intro-button-detail{
+    @include padding--xs;
+}
+
+.intro-button-detail__main{
+    @include font--lg;
+    @include margin-bottom--md;
+    text-align: center;
+}
+
+.intro-button-detail__sub{
+    @include font--basic;
+    text-align: center;
+}
